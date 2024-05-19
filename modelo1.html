@@ -1,0 +1,1494 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario DS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+
+<style>
+    .formulario-principal{
+        background-color: rgba(0, 0, 0, 1);
+        opacity: 0.8;
+    }
+    body{
+        background-image: url('https://img.freepik.com/foto-gratis/ninos-felices-jugando-juntos-al-aire-libre-bailando-sobre-cesped-disfrutando-actividades-al-aire-libre-divirtiendose-parque-concepto-fiesta-o-amistad-ninos_74855-11760.jpg?t=st=1714174061~exp=1714177661~hmac=ad7892d2d805a44a45bb35e90ccd1ad72bc93596ffa8ce2e9b6daa174b91e3e6&w=996');
+        background-repeat: repeat-y;
+        background-position: 0%;
+        background-size:contain ;
+    }
+
+    .text-07{
+        font-size: 0.7rem;
+    }
+
+    span{
+        color:white;
+    }
+    h1{
+        color:white;
+    }
+
+    .btn-outline-danger{
+        background-color: white;
+    }
+
+    .btn-outline-danger:hover{
+        background-color: skyblue;
+        color: white;
+    }
+
+
+
+    .box:hover{
+        background-color: skyblue;
+    }
+
+    .form-check{
+        padding: 0px;
+    }
+
+    .form-check-input{
+        margin-left: 1em !important;
+        border: black !important;
+    }
+
+    .box:has(> input[type="radio"]:checked){
+        background-color:  skyblue !important;
+        font-weight: bold;
+    }
+    
+    .box{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        height: 2rem;
+        text-align: center;
+        background-color: white;
+    }
+
+    
+
+   
+
+    
+</style>
+
+
+  <body>
+    <div class="container">
+        <div class="formulario-principal py-5">
+            <form action="">
+                <div class="row pb-5">
+                    <div class="col-12 py-5">
+                        <h1 class="text-center">La medida del bienestar subjetivo</h1>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-5">
+                        <label for="nombre" class="py-2 text-white">Nombre:</label>
+                        <input id="nombre" class="form-control" type="text">
+
+                        <label for="edad" class="py-2 text-white">Edad:</label>
+                        <input id="edad" class="form-control" type="number" min="1" max="100" value="1">
+                    </div>
+                    <div class="col-5">
+                        <label for="apellido" class="py-2 text-white">Apellido:</label>
+                        <input id="apellido" class="form-control" type="text">
+
+                        <label for="colegio" class="py-2 text-white">Colegio: </label>
+                        <select id="colegio" class="form-control" name="">
+                            <option class="disabled" disabled selected value="">Seleccione un colegio</option>
+                            <option value="">Colegio 1</option>
+                            <option value="">Colegio 2</option>
+                        </select>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+                    
+                <div id="pregunta_1"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">1</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">No me gusta mucho mi forma de ser</label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio1" id="pregunta1_radio1">
+                                <label for="pregunta1_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio1" id="pregunta1_radio2">
+                                <label for="pregunta1_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio1" id="pregunta1_radio3">
+                                <label for="pregunta1_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio1" id="pregunta1_radio4">
+                                <label for="pregunta1_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio1" id="pregunta1_radio5">
+                                <label for="pregunta1_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio1" id="pregunta1_radio6">
+                                <label for="pregunta1_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_2"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">2</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">Me intereso mucho por los demás</label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio2" id="pregunta2_radio1">
+                                <label for="pregunta2_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio2" id="pregunta2_radio2">
+                                <label for="pregunta2_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio2" id="pregunta2_radio3">
+                                <label for="pregunta2_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio2" id="pregunta2_radio4">
+                                <label for="pregunta2_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio2" id="pregunta2_radio5">
+                                <label for="pregunta2_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio2" id="pregunta2_radio6">
+                                <label for="pregunta2_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_3"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">3</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">Creo que la vida es muy gratificante</label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio3" id="pregunta3_radio1">
+                                <label for="pregunta3_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio3" id="pregunta3_radio2">
+                                <label for="pregunta3_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio3" id="pregunta3_radio3">
+                                <label for="pregunta3_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio3" id="pregunta3_radio4">
+                                <label for="pregunta3_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio3" id="pregunta3_radio5">
+                                <label for="pregunta3_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio3" id="pregunta3_radio6">
+                                <label for="pregunta3_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_4"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">4</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">Siento mucho afecto por casi todo el mundo</label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio4" id="pregunta4_radio1">
+                                <label for="pregunta4_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio4" id="pregunta4_radio2">
+                                <label for="pregunta4_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio4" id="pregunta4_radio3">
+                                <label for="pregunta4_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio4" id="pregunta4_radio4">
+                                <label for="pregunta4_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio4" id="pregunta4_radio5">
+                                <label for="pregunta4_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio4" id="pregunta4_radio6">
+                                <label for="pregunta4_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_5"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">5</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">Pocas veces me levanto descansado/a</label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio5" id="pregunta5_radio1">
+                                <label for="pregunta5_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio5" id="pregunta5_radio2">
+                                <label for="pregunta5_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio5" id="pregunta5_radio3">
+                                <label for="pregunta5_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio5" id="pregunta5_radio4">
+                                <label for="pregunta5_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio5" id="pregunta5_radio5">
+                                <label for="pregunta5_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio5" id="pregunta5_radio6">
+                                <label for="pregunta5_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_6"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">6</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">No soy muy optimista respecto al futuro</label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio6" id="pregunta6_radio1">
+                                <label for="pregunta6_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio6" id="pregunta6_radio2">
+                                <label for="pregunta6_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio6" id="pregunta6_radio3">
+                                <label for="pregunta6_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio6" id="pregunta6_radio4">
+                                <label for="pregunta6_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio6" id="pregunta6_radio5">
+                                <label for="pregunta6_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio6" id="pregunta6_radio6">
+                                <label for="pregunta6_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_7"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">7</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">Encuentro muchas cosas divertidas</label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio7" id="pregunta7_radio1">
+                                <label for="pregunta7_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio7" id="pregunta7_radio2">
+                                <label for="pregunta7_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio7" id="pregunta7_radio3">
+                                <label for="pregunta7_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio7" id="pregunta7_radio4">
+                                <label for="pregunta7_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio7" id="pregunta7_radio5">
+                                <label for="pregunta7_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio7" id="pregunta7_radio6">
+                                <label for="pregunta7_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_8"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">8</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">Me comprometo e involucro en muchas cosas</label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio8" id="pregunta8_radio1">
+                                <label for="pregunta8_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio8" id="pregunta8_radio2">
+                                <label for="pregunta8_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio8" id="pregunta8_radio3">
+                                <label for="pregunta8_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio8" id="pregunta8_radio4">
+                                <label for="pregunta8_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio8" id="pregunta8_radio5">
+                                <label for="pregunta8_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio8" id="pregunta8_radio6">
+                                <label for="pregunta8_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_9"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">9</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">La vida es muy bonita</label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio9" id="pregunta9_radio1">
+                                <label for="pregunta9_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio9" id="pregunta9_radio2">
+                                <label for="pregunta9_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio9" id="pregunta9_radio3">
+                                <label for="pregunta9_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio9" id="pregunta9_radio4">
+                                <label for="pregunta9_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio9" id="pregunta9_radio5">
+                                <label for="pregunta9_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio9" id="pregunta9_radio6">
+                                <label for="pregunta9_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_10"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">10</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">No pienso que el mundo sea un lugar agradable</label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio10" id="pregunta10_radio1">
+                                <label for="pregunta10_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio10" id="pregunta10_radio2">
+                                <label for="pregunta10_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio10" id="pregunta10_radio3">
+                                <label for="pregunta10_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio10" id="pregunta10_radio4">
+                                <label for="pregunta10_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio10" id="pregunta10_radio5">
+                                <label for="pregunta10_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio10" id="pregunta10_radio6">
+                                <label for="pregunta10_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_11"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">11</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">Me río mucho</label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio11" id="pregunta11_radio1">
+                                <label for="pregunta11_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio11" id="pregunta11_radio2">
+                                <label for="pregunta11_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio11" id="pregunta11_radio3">
+                                <label for="pregunta11_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio11" id="pregunta11_radio4">
+                                <label for="pregunta11_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio11" id="pregunta11_radio5">
+                                <label for="pregunta11_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio11" id="pregunta11_radio6">
+                                <label for="pregunta11_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_12"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">12</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">Estoy muy satisfecho/a con mi vida</label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio12" id="pregunta12_radio1">
+                                <label for="pregunta12_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio12" id="pregunta12_radio2">
+                                <label for="pregunta12_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio12" id="pregunta12_radio3">
+                                <label for="pregunta12_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio12" id="pregunta12_radio4">
+                                <label for="pregunta12_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio12" id="pregunta12_radio5">
+                                <label for="pregunta12_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio12" id="pregunta12_radio6">
+                                <label for="pregunta12_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_13"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">13</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">No me encuentro atractivo/a</label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio13" id="pregunta13_radio1">
+                                <label for="pregunta13_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio13" id="pregunta13_radio2">
+                                <label for="pregunta13_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio13" id="pregunta13_radio3">
+                                <label for="pregunta13_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio13" id="pregunta13_radio4">
+                                <label for="pregunta13_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio13" id="pregunta13_radio5">
+                                <label for="pregunta13_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio13" id="pregunta13_radio6">
+                                <label for="pregunta13_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_14"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">14</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for=""> Hay una gran diferencia entre lo que me gustaría hacer y lo que realmente hago</label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio14" id="pregunta14_radio1">
+                                <label for="pregunta14_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio14" id="pregunta14_radio2">
+                                <label for="pregunta14_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio14" id="pregunta14_radio3">
+                                <label for="pregunta14_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio14" id="pregunta14_radio4">
+                                <label for="pregunta14_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio14" id="pregunta14_radio5">
+                                <label for="pregunta14_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio14" id="pregunta14_radio6">
+                                <label for="pregunta14_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_15"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">15</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">  Soy muy feliz </label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio15" id="pregunta15_radio1">
+                                <label for="pregunta15_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio15" id="pregunta15_radio2">
+                                <label for="pregunta15_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio15" id="pregunta15_radio3">
+                                <label for="pregunta15_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio15" id="pregunta15_radio4">
+                                <label for="pregunta15_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio15" id="pregunta15_radio5">
+                                <label for="pregunta15_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio15" id="pregunta15_radio6">
+                                <label for="pregunta15_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_16"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">16</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">  Encuentro hermosas muchas cosas </label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio16" id="pregunta16_radio1">
+                                <label for="pregunta16_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio16" id="pregunta16_radio2">
+                                <label for="pregunta16_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio16" id="pregunta16_radio3">
+                                <label for="pregunta16_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio16" id="pregunta16_radio4">
+                                <label for="pregunta16_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio16" id="pregunta16_radio5">
+                                <label for="pregunta16_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio16" id="pregunta16_radio6">
+                                <label for="pregunta16_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_17"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">17</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">   Siempre influyo positivamente en los demás </label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio17" id="pregunta17_radio1">
+                                <label for="pregunta17_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio17" id="pregunta17_radio2">
+                                <label for="pregunta17_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio17" id="pregunta17_radio3">
+                                <label for="pregunta17_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio17" id="pregunta17_radio4">
+                                <label for="pregunta17_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio17" id="pregunta17_radio5">
+                                <label for="pregunta17_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio17" id="pregunta17_radio6">
+                                <label for="pregunta17_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_18"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">18</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">   Tengo tiempo para hacer todo lo que quiero </label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio18" id="pregunta18_radio1">
+                                <label for="pregunta18_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio18" id="pregunta18_radio2">
+                                <label for="pregunta18_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio18" id="pregunta18_radio3">
+                                <label for="pregunta18_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio18" id="pregunta18_radio4">
+                                <label for="pregunta18_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio18" id="pregunta18_radio5">
+                                <label for="pregunta18_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio18" id="pregunta18_radio6">
+                                <label for="pregunta18_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_19"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">19</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">   Siento que no tengo mucho control sobre mi vida </label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio19" id="pregunta19_radio1">
+                                <label for="pregunta19_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio19" id="pregunta19_radio2">
+                                <label for="pregunta19_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio19" id="pregunta19_radio3">
+                                <label for="pregunta19_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio19" id="pregunta19_radio4">
+                                <label for="pregunta19_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio19" id="pregunta19_radio5">
+                                <label for="pregunta19_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio19" id="pregunta19_radio6">
+                                <label for="pregunta19_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_20"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">20</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">    Me siento capaz de tomar decisiones </label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio20" id="pregunta20_radio1">
+                                <label for="pregunta20_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio20" id="pregunta20_radio2">
+                                <label for="pregunta20_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio20" id="pregunta20_radio3">
+                                <label for="pregunta20_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio20" id="pregunta20_radio4">
+                                <label for="pregunta20_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio20" id="pregunta20_radio5">
+                                <label for="pregunta20_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio20" id="pregunta20_radio6">
+                                <label for="pregunta20_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_21"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">21</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for=""> Me siento mentalmente despierto/a </label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio21" id="pregunta21_radio1">
+                                <label for="pregunta21_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio21" id="pregunta21_radio2">
+                                <label for="pregunta21_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio21" id="pregunta21_radio3">
+                                <label for="pregunta21_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio21" id="pregunta21_radio4">
+                                <label for="pregunta21_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio21" id="pregunta21_radio5">
+                                <label for="pregunta21_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio21" id="pregunta21_radio6">
+                                <label for="pregunta21_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_22"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">22</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for=""> Generalmente, soy alegre y optimista </label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio22" id="pregunta22_radio1">
+                                <label for="pregunta22_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio22" id="pregunta22_radio2">
+                                <label for="pregunta22_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio22" id="pregunta22_radio3">
+                                <label for="pregunta22_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio22" id="pregunta22_radio4">
+                                <label for="pregunta22_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio22" id="pregunta22_radio5">
+                                <label for="pregunta22_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio22" id="pregunta22_radio6">
+                                <label for="pregunta22_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_23"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">23</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for=""> No me resulta fácil tomar decisiones </label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio23" id="pregunta23_radio1">
+                                <label for="pregunta23_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio23" id="pregunta23_radio2">
+                                <label for="pregunta23_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio23" id="pregunta23_radio3">
+                                <label for="pregunta23_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio23" id="pregunta23_radio4">
+                                <label for="pregunta23_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio23" id="pregunta23_radio5">
+                                <label for="pregunta23_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio23" id="pregunta23_radio6">
+                                <label for="pregunta23_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_24"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">24</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for=""> No encuentro mucho significado y sentido a mi vida </label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio24" id="pregunta24_radio1">
+                                <label for="pregunta24_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio24" id="pregunta24_radio2">
+                                <label for="pregunta24_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio24" id="pregunta24_radio3">
+                                <label for="pregunta24_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio24" id="pregunta24_radio4">
+                                <label for="pregunta24_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio24" id="pregunta24_radio5">
+                                <label for="pregunta24_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio24" id="pregunta24_radio6">
+                                <label for="pregunta24_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_25"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">25</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for=""> Me siento con mucha energía </label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio25" id="pregunta25_radio1">
+                                <label for="pregunta25_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio25" id="pregunta25_radio2">
+                                <label for="pregunta25_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio25" id="pregunta25_radio3">
+                                <label for="pregunta25_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio25" id="pregunta25_radio4">
+                                <label for="pregunta25_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio25" id="pregunta25_radio5">
+                                <label for="pregunta25_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio25" id="pregunta25_radio6">
+                                <label for="pregunta25_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_26"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">26</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">  Suelo influir positivamente en los acontecimientos </label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio26" id="pregunta26_radio1">
+                                <label for="pregunta26_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio26" id="pregunta26_radio2">
+                                <label for="pregunta26_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio26" id="pregunta26_radio3">
+                                <label for="pregunta26_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio26" id="pregunta26_radio4">
+                                <label for="pregunta26_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio26" id="pregunta26_radio5">
+                                <label for="pregunta26_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio26" id="pregunta26_radio6">
+                                <label for="pregunta26_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_27"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">27</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">  No me divierto con otras personas </label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio27" id="pregunta27_radio1">
+                                <label for="pregunta27_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio27" id="pregunta27_radio2">
+                                <label for="pregunta27_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio27" id="pregunta27_radio3">
+                                <label for="pregunta27_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio27" id="pregunta27_radio4">
+                                <label for="pregunta27_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio27" id="pregunta27_radio5">
+                                <label for="pregunta27_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio27" id="pregunta27_radio6">
+                                <label for="pregunta27_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_28"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">28</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">  No me encuentro muy bien de salud </label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio28" id="pregunta28_radio1">
+                                <label for="pregunta28_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio28" id="pregunta28_radio2">
+                                <label for="pregunta28_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio28" id="pregunta28_radio3">
+                                <label for="pregunta28_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio28" id="pregunta28_radio4">
+                                <label for="pregunta28_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio28" id="pregunta28_radio5">
+                                <label for="pregunta28_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio28" id="pregunta28_radio6">
+                                <label for="pregunta28_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pregunta_29"class="row align-items-end py-4">
+                    <div class="col-2 d-flex justify-content-end">
+                        <span class="btn btn-danger rounded-5 text-end">29</span>
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label text-white" for="">  No tengo recuerdos muy felices del pasado </label>
+                    </div>
+
+                    <div class="col-8">
+
+                    </div>
+
+                    <div class="offset-2 col-6 ">
+                        <div class="form-check px-0">
+                            <div class="box px-0">
+                                <input class="form-check-input" type="radio" name="radio29" id="pregunta29_radio1">
+                                <label for="pregunta29_radio1" class="form-check-label ps-2">Total desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio29" id="pregunta29_radio2">
+                                <label for="pregunta29_radio2" class="form-check-label ps-2">Moderado  desacuerdo</label>
+                            </div>
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio29" id="pregunta29_radio3">
+                                <label for="pregunta29_radio3" class="form-check-label ps-2">Ligero desacuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio29" id="pregunta29_radio4">
+                                <label for="pregunta29_radio4" class="form-check-label ps-2">Ligero acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio29" id="pregunta29_radio5">
+                                <label for="pregunta29_radio5" class="form-check-label ps-2">Moderado acuerdo</label>
+                            </div>    
+
+                            <div class="box px-0 mt-2">
+                                <input class="form-check-input" type="radio" name="radio29" id="pregunta29_radio6">
+                                <label for="pregunta29_radio6" class="form-check-label ps-2">Total acuerdo</label>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="col-12 d-flex justify-content-center">
+                    <button class="btn btn-danger px-5 my-5">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
