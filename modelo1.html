@@ -61,7 +61,7 @@
     }
     
     .box{
-        width: 90%;
+        width: 100%;
         display: flex;
         align-items: center;
         height: 2rem;
@@ -83,17 +83,20 @@
                     <div class="col-12 py-5">
                         <h1 class="text-center">La medida del bienestar subjetivo</h1>
                     </div>
-                    <div class="col-1"></div>
-                    <div class="col-5">
+
+                    <div class="offset-2 col-8">
                         <label for="nombre" class="py-2 text-white">Nombre:</label>
                         <input id="nombre" class="form-control" type="text">
 
-                        <label for="edad" class="py-2 text-white">Edad:</label>
-                        <input id="edad" class="form-control" type="number" min="1" max="100" value="1">
-                    </div>
-                    <div class="col-5">
                         <label for="apellido" class="py-2 text-white">Apellido:</label>
                         <input id="apellido" class="form-control" type="text">
+
+                    </div>
+
+                    <div class="offset-2 col-8">
+        
+                        <label for="edad" class="py-2 text-white">Edad:</label>
+                        <input id="edad" class="form-control" type="number" min="1" max="100" value="1">
 
                         <label for="colegio" class="py-2 text-white">Colegio: </label>
                         <select id="colegio" class="form-control" name="">
@@ -102,7 +105,7 @@
                             <option value="">Colegio 2</option>
                         </select>
                     </div>
-                    <div class="col-1"></div>
+                    
                 </div>
                     
                 <div id="pregunta_1"class="row align-items-end py-4">
